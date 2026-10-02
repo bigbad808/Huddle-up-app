@@ -1,0 +1,41 @@
+:root {
+  --bg: #EDEEE3;
+  --text: #182420;
+  --text-soft: #4A564E;
+  --accent: #C6F135;
+  --secondary: #3D5A45;
+  --line: #C9CDB8;
+  --card-bg: #FFFFFF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Work Sans', system-ui, sans-serif;
+  line-height: 1.5;
+}
+.wrap { max-width: 640px; margin: 0 auto; padding: 32px 20px 60px; }
+h1, h2, h3 { font-family: 'League Spartan', system-ui, sans-serif; font-weight: 900; margin: 0 0 12px; }
+fieldset { border: none; padding: 0; margin: 0 0 20px; }
+legend { font-weight: 700; margin-bottom: 8px; }
+select, input[type="text"], input[type="email"] {
+  width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 4px;
+  font-size: 15px; background: var(--card-bg); color: var(--text);
+}
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  padding: 8px 14px; border: 1px solid var(--line); border-radius: 20px;
+  cursor: pointer; font-size: 14px; background: var(--card-bg);
+}
+.chip.selected { background: var(--secondary); color: #fff; border-color: var(--secondary); }
+button, .btn {
+  background: var(--secondary); color: #fff; border: none; padding: 13px 22px;
+  border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 15px;
+}
+.card {
+  background: var(--card-bg); border: 1px solid var(--line); border-radius: 6px;
+  padding: 22px; margin-bottom: 18px;
+}
+.msg { margin-bottom: 10px; font-size: 14px; }
+.msg b { color: var(--secondary); }
